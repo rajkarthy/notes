@@ -8,7 +8,7 @@ import { Notes } from "../notes";
   styleUrls: ['./notes.component.css']
 })
 export class NotesComponent implements OnInit {
-  constructor(private noteservice : NotesService) { }
+  constructor(public noteservice : NotesService) { }
 
   ngOnInit() {
 

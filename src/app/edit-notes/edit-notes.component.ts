@@ -9,9 +9,9 @@ import { Notes } from "../notes";
   styleUrls: ['./edit-notes.component.css']
 })
 export class EditNotesComponent implements OnInit {
-  private currentNote: Notes;
-  private currentNoteId: number;
-  constructor(private noteservice : NotesService,
+  public currentNote: Notes;
+  public currentNoteId: number;
+  constructor(public noteservice : NotesService,
       private routes: ActivatedRoute )
       { }
 

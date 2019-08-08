@@ -6,7 +6,7 @@ import { Observable } from "rxjs/Observable";
 
 @Injectable()
 export class NotesService {
-  private notes: Notes[] = NOTES;
+  public notes: Notes[] = NOTES;
   constructor(private http : HttpClient) { }
 
  getValues(id:number):Notes{
