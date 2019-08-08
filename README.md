@@ -1,2 +1,0 @@
-# notes
-Basic notes app
