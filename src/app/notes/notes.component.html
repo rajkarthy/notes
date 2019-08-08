@@ -1,0 +1,11 @@
+<ul>
+	<li *ngFor="let note of this.noteservice.notes" [class.completed]="note.isCompleted === true"
+		(click)="note.isCompleted = !note.isCompleted">
+		{{note.content}}
+		<a routerLink="/notes/edit/{{note.id}}"> Edit </a>
+	</li>
+</ul>
+<input type="text" name="" value="" #newNoteText >
+<button type="button" name="button" (click)=this.addNotes(newNoteText.value) >Add Notes</button>
+
+<button type="button" name="button" (click)=this.getJobs() > Get Jobs </button>
